@@ -1,0 +1,39 @@
+/* Footer */
+
+    .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-decoration:none;
+    .footer-text{
+        width:100%;
+        color:gray;
+        font-size:0.8rem;
+        display: inline;
+        }
+        .footer-text a{
+        text-decoration:none;
+        color:gray;
+        transition:0.5s;
+        }
+
+        .footer-icons
+        a{
+        text-decoration:none;
+        i{
+            width:100%;
+            color:gray;
+            font-size:2rem;
+            display: inline;
+            text-decoration:none;
+            padding: 20px;
+            &:hover{
+                color:#fff;
+                }
+        }
+    }
+}

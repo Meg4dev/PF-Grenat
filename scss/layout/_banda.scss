@@ -1,0 +1,58 @@
+.background-banda{
+    background-image: url(../images/background-banda.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+// Contenedor para informacion y foto del miembro
+
+.member-item{
+    @include flex-container (row, 100%, 100%, 30px 40px, 20px);
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(27, 27, 27);
+}
+
+
+.member-item-reverse{
+    @include flex-container (row-reverse, 100%, 100%, 30px 40px, 20px);
+    text-align: end;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(27, 27, 27);
+}
+
+// Contenedor para imagen del miembro
+
+.pics-container{
+    width: 45%;
+    height: 100%;
+    overflow: auto;
+}
+.member-pic{
+    width: 750px;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+// Contenedor para el nombre e informacion del miembro
+
+.member-info-container{
+    width: 55%;
+    height: 100%;
+    overflow: auto;
+    .member-name{
+        font-family: 'Fontspring-DEMO-proximanovacond-black';
+        font-size: 6rem;
+        color: white;
+    }
+    .member-history{
+        font-family: 'SchibstedGrotesk-Regular';
+        font-size: 18px;
+        color: white;
+        margin: 0;
+    }
+}

@@ -1,0 +1,30 @@
+@import 'utilities';
+
+.banner-container{
+    background-color: rgb(3, 3, 3);
+}
+
+.common-box{
+    @include flex-container (column, 100%, 100%, 20px 20px, 20px);
+    overflow: auto;
+}
+
+.common-container{
+
+    gap: 10px;
+
+    }
+
+    .common-titles{
+        font-family: 'Fontspring-DEMO-proximanovacond-black';
+        color: black;
+        text-align: center;
+        font-size: 3rem;
+        .common-text{
+            font-family: 'SchibstedGrotesk-Regular';
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+    }

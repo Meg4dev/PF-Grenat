@@ -1,3 +1,906 @@
+body {
+  min-height: 100vh;
+}
+body main {
+  min-height: 100vh;
+  max-height: 100%;
+}
+body main h1 {
+  display: flex;
+  flex-direction: column-reverse;
+  display: flex;
+  height: 960px;
+  width: 100%;
+  margin: 0;
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  color: white;
+  text-align: center;
+  font-size: 10rem;
+  justify-content: center;
+  background-image: url(../images/metallica-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  src: url(../fonts/Fontspring-DEMO-proximanovacond-black.otf);
+}
+@font-face {
+  font-family: "Fontspring-DEMO-proximanova-bold";
+  src: url(../fonts/Fontspring-DEMO-proximanova-bold.otf);
+}
+@font-face {
+  font-family: "Fontspring-DEMO-proximanova-regular";
+  src: url(../fonts/Fontspring-DEMO-proximanova-regular.otf);
+}
+@font-face {
+  font-family: "SchibstedGrotesk-Regular";
+  src: url(../fonts/SchibstedGrotesk-Regular.ttf);
+}
+iframe {
+  padding: 20px;
+  margin: 0;
+  height: 500px;
+}
+
+.banner-container {
+  background-color: rgb(3, 3, 3);
+}
+
+.common-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  gap: 20px;
+  overflow: auto;
+}
+
+.common-container {
+  gap: 10px;
+}
+
+.common-titles {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+}
+.common-titles .common-text {
+  font-family: "SchibstedGrotesk-Regular";
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-decoration: none;
+}
+.footer .footer-text {
+  width: 100%;
+  color: gray;
+  font-size: 0.8rem;
+  display: inline;
+}
+.footer .footer-text a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+.footer .footer-icons a {
+  text-decoration: none;
+}
+.footer .footer-icons a i {
+  width: 100%;
+  color: gray;
+  font-size: 2rem;
+  display: inline;
+  text-decoration: none;
+  padding: 20px;
+}
+.footer .footer-icons a i:hover {
+  color: #fff;
+}
+
+nav {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+}
+
+.background-index {
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.history-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
+  gap: 20px;
+}
+
+.history-pic-container {
+  width: 90%;
+  height: 90%;
+}
+.history-pic-container .history-pic {
+  width: 800px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.history-info-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.history-info-container .history-title {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  font-size: 5.5rem;
+  color: black;
+}
+.history-info-container .band-history-text {
+  font-family: "SchibstedGrotesk-Regular";
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+
+.history-container-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
+  gap: 20px;
+  text-align: end;
+}
+
+.release-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  margin: 0;
+  color: black;
+  overflow: auto;
+  font-size: 18px;
+}
+.release-container .release-album {
+  width: 800px;
+  height: 700px;
+}
+.release-container .release-album-title {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  font-size: 10rem;
+}
+.release-container .release-album-title .release-info {
+  flex-direction: column;
+}
+
+.nextdates-container {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+  margin: 0px;
+  color: white;
+  justify-content: space-around;
+}
+.nextdates-container .nextdate-items {
+  background-image: url(../images/tour-date-card.jpg);
+  background-size: auto;
+  background-attachment: fixed;
+  height: 295px;
+  width: 460px;
+  padding: 40px;
+}
+.nextdates-container .next-date {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nextdates-container .nextdate-country {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  font-size: 2rem;
+}
+.nextdates-container .nextdate-place {
+  font-family: "Fontspring-DEMO-proximanova-bold";
+  font-size: 1rem;
+}
+
+.nextdate-button {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 80px 5px;
+  overflow: auto;
+}
+.nextdate-button .nextdate-link {
+  font-family: "Fontspring-DEMO-proximanova-bold";
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+.nextdate-button .nextdate-link:hover {
+  color: yellow;
+}
+
+.background-banda {
+  background-image: url(../images/background-banda.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.member-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
+  gap: 20px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(27, 27, 27);
+}
+
+.member-item-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px;
+  gap: 20px;
+  text-align: end;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(27, 27, 27);
+}
+
+.pics-container {
+  width: 45%;
+  height: 100%;
+  overflow: auto;
+}
+
+.member-pic {
+  width: 750px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.member-info-container {
+  width: 55%;
+  height: 100%;
+  overflow: auto;
+}
+.member-info-container .member-name {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  font-size: 6rem;
+  color: white;
+}
+.member-info-container .member-history {
+  font-family: "SchibstedGrotesk-Regular";
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+.background-discografia {
+  background-image: url(../images/background-discografia.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.album-box {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 20px 30px;
+  gap: 20px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 5px;
+  overflow: auto;
+}
+.album-box .album-info-container {
+  width: 100%;
+  height: 100%;
+}
+.album-box .album-title {
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  font-size: 5rem;
+  color: white;
+}
+.album-box .album-text {
+  font-family: "SchibstedGrotesk-Regular";
+  font-size: 18px;
+  color: white;
+}
+.album-box .album-pic-container {
+  width: 100%;
+  height: 100%;
+}
+.album-box .album-img {
+  width: 800px;
+  height: 800px;
+}
+.album-box .spotify-button {
+  align-self: flex-end;
+}
+.album-box .spotify-link {
+  font-family: "Fontspring-DEMO-proximanova-bold";
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+.background-tour {
+  background-image: url(../images/background-tour.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.date-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  padding: 40px 10px;
+  place-items: center;
+}
+
+.date-item {
+  background-image: url(../images/tour-date-card.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: local;
+  width: 440px;
+  height: 530px;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
+}
+.date-item .tour-date {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+.date-item .tour-city {
+  color: white;
+  font-family: "Fontspring-DEMO-proximanovacond-black";
+  font-size: 2.5rem;
+}
+.date-item .tour-place {
+  color: white;
+  font-family: "Fontspring-DEMO-proximanova-bold";
+  font-size: 1rem;
+}
+.date-item .buytickets-link {
+  color: white;
+  font-family: "Fontspring-DEMO-proximanova-bold";
+  font-size: 1rem;
+  padding: 130px 0px;
+  text-decoration: none;
+}
+
+.video-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+.video-container .video-item {
+  width: 50%;
+  height: 50%;
+}
+
+.background-gallery {
+  background-image: url(../images/gallery-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.gallery-box {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  grid-auto-rows: 800px;
+  grid-auto-flow: row;
+  width: 100%;
+  height: 100%;
+}
+.gallery-box .gallery-box article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-box .pic-gallery {
+  max-width: 100%;
+  padding: 25px 25px;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.gallery-box article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px;
+}
+.gallery-box article img .gallery-box .wide {
+  grid-column: span 2;
+}
+.gallery-box article img .gallery-box .tall {
+  grid-row: span 2;
+}
+.gallery-box article img .gallery-box .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media (max-width: 1500px) {
+  .history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .history-container .history-pic-container {
+    width: 80%;
+    height: 80%;
+  }
+  .history-container .history-pic-container .history-pic {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+  }
+  .history-container-reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .history-container-reverse .history-pic-container {
+    width: 80%;
+    height: 80%;
+  }
+  .history-container-reverse .history-pic-container .history-pic {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 875px) {
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-pic-container {
+    width: 100%;
+    height: 100%;
+  }
+  .history-info-container .history-pic-container .history-pic {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+@media (max-width: 655px) {
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .history-info-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .history-info-container .history-title {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .history-info-container .band-history-text {
+    text-align: center;
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 1300px) {
+  .release-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .release-container .release-album {
+    width: 100%;
+    height: auto;
+  }
+  .release-container .release-album-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .nextdates-container {
+    flex-direction: column;
+    width: auto;
+    height: 300px;
+    gap: 40px;
+  }
+  .nextdates-container .nextdate-items {
+    width: auto;
+    height: 300px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .nextdates-container .nextdate-button {
+    justify-content: center;
+  }
+  .nextdates-container .next-date {
+    font-size: 18px;
+  }
+}
+/* Media Queries para Banda.html */
+@media (max-width: 1400px) {
+  .member-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+  }
+  .member-item .pics-container {
+    width: 100%;
+    height: 100%;
+  }
+  .member-item .member-pic {
+    width: 100%;
+    height: 100%;
+  }
+  .member-item .member-info-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .member-item-reverse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .member-item-reverse .pics-container {
+    width: 100%;
+    height: 100%;
+  }
+  .member-item-reverse .member-pic {
+    width: 100%;
+    height: 100%;
+  }
+  .member-item-reverse .member-info-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 910px) {
+  .member-info-container .member-name {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 650px) {
+  .member-info-container .member-name {
+    font-size: 4rem;
+  }
+  .member-info-container .member-history {
+    font-size: 16px;
+  }
+}
+@media (max-width: 532px) {
+  .member-info-container .member-name {
+    font-size: 3rem;
+  }
+  .member-info-container .member-history {
+    font-size: 14px;
+  }
+}
+/* Media Queries para Discografia.html */
+@media (max-width: 1581px) {
+  .album-box {
+    flex-direction: column;
+    text-align: center;
+    background-color: transparent;
+  }
+  .album-box .album-info-container {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: black 4px 4px 4px;
+    padding: 10px 20px;
+  }
+  .album-box .spotify-button {
+    align-self: center;
+    background-color: black;
+    height: 29px;
+    width: 84px;
+    border-radius: 5px;
+    box-shadow: black 2px 2px 2px 2px;
+  }
+  .album-box .spotify-link:hover {
+    color: yellow;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 888px) {
+  .album-pic-container {
+    width: 500px;
+    height: 500px;
+    align-self: center;
+  }
+  .album-pic-container .album-img {
+    width: 500px;
+    height: 500px;
+  }
+  .album-info-container .album-title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 570px) {
+  body main h1 {
+    font-size: 3rem;
+  }
+  .album-pic-container {
+    width: 400px;
+    height: 400px;
+    align-self: center;
+  }
+  .album-pic-container .album-img {
+    width: 400px;
+    height: 400px;
+  }
+  .album-box .album-info-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .album-box .album-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 478px) {
+  .album-pic-container {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+  }
+  .album-pic-container .album-img {
+    width: 300px;
+    height: 300px;
+  }
+  .album-info-container .album-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 360px) {
+  .album-pic-container {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  .album-pic-container .album-img {
+    width: 200px;
+    height: 200px;
+  }
+  .album-info-container .album-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  body main h1 {
+    font-size: 2.5rem;
+  }
+}
+/* Media Queries para tour.html */
+@media (max-width: 1410px) {
+  .date-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .video-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .video-container .video-item {
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 930px) {
+  .date-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 512px) {
+  .date-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .date-box .date-item {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .video-item {
+    width: 100%;
+    height: 100%;
+  }
+  .common-titles {
+    font-size: 2rem;
+  }
+}
+/* Media Queries para Galeria.html */
+@media (min-width: 640px) and (max-width: 1024px) {
+  .gallery-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .pic-gallery {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 320px) and (max-width: 640px) {
+  .gallery-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .pic-gallery {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
+/* Media Queries para footer y Main h1*/
+@media (min-width: 300px) and (max-width: 430px) {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-item {
+    align-self: center;
+  }
+}
+@media (max-width: 1024px) {
+  body main h1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: 850px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body main h1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: 750px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  body main h1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    height: 650px;
+  }
+}
+.spotify-link:hover {
+  color: yellow;
+  transition: 0.5s;
+}
+
+.buytickets-link:hover {
+  color: yellow;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.pic-gallery:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: yellow;
+  font-size: 18px;
+  transition: 0.5s;
+}
 
 /*# sourceMappingURL=style.css.map */
