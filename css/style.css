@@ -98,11 +98,15 @@ iframe {
   color: gray;
   font-size: 0.8rem;
   display: inline;
+  cursor: pointer;
 }
 .footer .footer-text a {
   text-decoration: none;
   color: gray;
   transition: 0.5s;
+}
+.footer .footer-text a:hover {
+  color: #fff;
 }
 .footer .footer-icons a {
   text-decoration: none;
@@ -186,6 +190,7 @@ nav {
   color: black;
   overflow: auto;
   font-size: 18px;
+  font-family: "SchibstedGrotesk-Regular";
 }
 .release-container .release-album {
   width: 800px;
@@ -246,7 +251,9 @@ nav {
   color: white;
 }
 .nextdate-button .nextdate-link:hover {
-  color: yellow;
+  color: crimson;
+  font-size: 16px;
+  transition: 0.5s;
 }
 
 .background-banda {
@@ -337,6 +344,7 @@ nav {
   font-family: "SchibstedGrotesk-Regular";
   font-size: 18px;
   color: black;
+  margin-bottom: 0;
 }
 .album-box .album-pic-container {
   width: 100%;
