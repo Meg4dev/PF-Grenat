@@ -250,21 +250,15 @@
         text-align: center;
         background-color: transparent;
         .album-info-container{
-            background-color: black;
-            border-radius: 10px;
-            box-shadow: black 4px 4px 4px;
             padding: 10px 20px;
             }
             .spotify-button{
                 align-self: center;
-                background-color: black;
                 height: 29px;
                 width: 84px;
-                border-radius: 5px;
-                box-shadow: black 2px 2px 2px 2px;
             }
             .spotify-link:hover{
-                color: yellow;
+                color:crimson;
                 font-size: 15px;
                 transition: 0.5s;
             }
@@ -470,12 +464,12 @@
 }}
 
 .spotify-link:hover{
-    color: yellow;
+    color:crimson;
     transition: 0.5s;
 }
 
 .buytickets-link:hover{
-    color: yellow;
+    color:crimson;
     font-size: 18px;
     transition: 0.5s;
 
@@ -486,10 +480,4 @@
     transition: 0.5s;
     cursor: pointer;
 
-}
-
-.footer-link:hover{
-    color: yellow;
-    font-size: 18px;
-    transition: 0.5s;
 }

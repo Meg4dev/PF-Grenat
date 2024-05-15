@@ -1,5 +1,5 @@
 .background-index{
-    background-color: whitesmoke;
+    background-image: url(../images/AWmUyJ.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-attachment:fixed;
@@ -19,6 +19,7 @@
             width: 800px;
             height: 700px;
             object-fit: cover;
+            box-shadow: 5px 5px 5px rgb(27, 27, 27);
         }
     }
 
@@ -59,6 +60,7 @@
     .release-album{
         width: 800px;
         height: 700px;
+        box-shadow: 5px 5px 5px rgb(27, 27, 27);
     }
     .release-album-title{
         font-family: 'Fontspring-DEMO-proximanovacond-black';
@@ -84,6 +86,7 @@
         height: 295px;
         width: 460px;
         padding: 40px;
+        box-shadow: 6px 6px 6px 6px rgb(27, 27, 27);
     }
     .next-date{
         font-family: sans-serif;

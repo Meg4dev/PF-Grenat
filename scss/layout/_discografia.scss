@@ -1,18 +1,15 @@
 .background-discografia{
-    background-image: url(../images/background-discografia.jpg);
+    background-image: url(../images/AWmUyJ.jpg);
     background-repeat: no-repeat;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size:cover;
-
 }
 
 // Contenedor para album e informacion
 
 .album-box{
     @include flex-container-nodirection(100%, 100%, 20px 30px, 20px);
-    background-color: black;
-    border-radius: 10px;
     margin: 5px;
     overflow: auto;
     .album-info-container{
@@ -22,12 +19,12 @@
     .album-title{
         font-family: 'Fontspring-DEMO-proximanovacond-black';
         font-size: 5rem;
-        color: white;
+        color: black;
     }
     .album-text{
         font-family: 'SchibstedGrotesk-Regular';
         font-size: 18px;
-        color: white;
+        color: black;
 
     }
 
@@ -38,6 +35,7 @@
     .album-img{
         width: 800px;
         height: 800px;
+        box-shadow: 5px 5px 5px 5px rgb(27, 27, 27);
     }
 
     //Boton de Spotify
@@ -49,6 +47,7 @@
         font-family: 'Fontspring-DEMO-proximanova-bold';
         font-size: 0.8rem;
         text-decoration: none;
-        color: white;
+        color: black;
+        border-radius: 2px;
     }
 }
