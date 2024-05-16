@@ -1,9 +1,9 @@
 .background-discografia{
-    background-image: url(../images/AWmUyJ.jpg);
-    background-repeat: no-repeat;
-    background-position:center;
+    min-height: 100vh;
+    max-height: 100%;
+    background: linear-gradient(175deg, rgba(235, 235, 235, 0.863), rgba(212, 212, 212, 0.801)), url(../images/bakugan.jpg);
+    background-size: cover;
     background-attachment: fixed;
-    background-size:cover;
 }
 
 // Contenedor para album e informacion
@@ -20,12 +20,16 @@
         font-family: 'Fontspring-DEMO-proximanovacond-black';
         font-size: 5rem;
         color: black;
+        animation: aparecer-derecha 2s forwards;
+        opacity: 0;
     }
     .album-text{
         font-family: 'SchibstedGrotesk-Regular';
         font-size: 18px;
         color: black;
         margin-bottom: 0;
+        animation: aparecer-atenuado 3s forwards;
+        opacity: 0;
     }
 
     .album-pic-container{
@@ -36,6 +40,8 @@
         width: 800px;
         height: 800px;
         box-shadow: 5px 5px 5px 5px rgb(27, 27, 27);
+        animation: aparecer 1s forwards;
+        opacity: 0;
     }
 
     //Boton de Spotify
@@ -49,5 +55,7 @@
         text-decoration: none;
         color: black;
         border-radius: 2px;
+        animation: aparecer 4s forwards;
+        opacity: 0;
     }
 }

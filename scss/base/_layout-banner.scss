@@ -5,18 +5,27 @@ body{
     max-height: 100%;
 
     h1{
+    font-family: 'Fontspring-DEMO-proximanovacond-black';
+    color: white;
+    text-align: center;
+    font-size: 10rem;
+    animation: aparecer-atenuado 1s forwards;
+}}}
+
+.banner-container{
     display: flex;
     flex-direction: column-reverse;
     height: 960px;
     width: 100%;
     margin: 0;
-    font-family: 'Fontspring-DEMO-proximanovacond-black';
-    color: white;
-    text-align: center;
-    font-size: 10rem;
-    justify-content: center;
     background-image: url(../images/metallica-banner.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
-}}}
+    justify-content: center;
+}
+
+
+
+
+

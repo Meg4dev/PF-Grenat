@@ -7,6 +7,7 @@
 .common-box{
     @include flex-container (column, 100%, 100%, 20px 20px, 20px);
     overflow: auto;
+
 }
 
 .common-container{
@@ -21,7 +22,7 @@
         .common-text{
             font-family: 'SchibstedGrotesk-Regular';
             font-size: 18px;
-            color: white;
+            color: black;
             text-align: center;
             margin: 0;
         }
