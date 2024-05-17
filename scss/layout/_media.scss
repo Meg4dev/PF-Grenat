@@ -1,13 +1,17 @@
 //Media Queries para index.html
 
-@media (max-width:1500px){
+@media (max-width: 1366px) {
     .history-container{
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        .history-title{
+            font-size: 2rem;
+        }
+        .band-history-text{
+            font-size: 11px;
+        }
         .history-pic-container{
-            width: 80%;
-            height: 80%;
+            width: 100%;
+            height: 100%;
             .history-pic{
                 align-self: center;
                 width: 100%;
@@ -15,6 +19,77 @@
             }
         }
     }
+    .history-container-reverse{
+        align-items: center;
+        .history-title{
+            font-size: 2rem;
+        }
+        .band-history-text{
+            font-size: 11px;
+        }
+        .history-pic-container{
+            width: 100%;
+            height: 100%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .release-container
+    {
+        align-items: center;
+        .release-album{
+            width: 35%;
+            height: 35%;
+        }
+        .release-album-title{
+            font-size: 4rem;
+        }
+        .band-history-text{
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+
+.nextdates-container{
+    width: auto;
+    height: 300px;
+    gap: 40px;
+    .nextdate-items{
+        width: 100%;
+        height: 250px;
+        font-size: 2rem;
+    }
+    .nextdate-button{
+        justify-content: center;
+    }
+    .next-date{
+        font-size: 18px;
+    }}
+
+
+}
+
+
+    @media (max-width:1030px){
+        .history-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .history-pic-container{
+                width: 60%;
+                height: 60%;
+                .history-pic{
+                    align-self: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    
 
     .history-info-container{
         width: 100%;
@@ -31,6 +106,400 @@
     }
 
     .history-container-reverse{
+        .history-title{
+            text-align: center;
+        }
+        .band-history-text{
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-pic-container{
+            width: 60%;
+            height: 60%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+        .release-container{
+        align-items: center;
+        .release-album{
+            width: 35%;
+            height: 35%;
+        }
+        .release-album-title{
+            font-size: 4rem;
+        }
+        .band-history-text{
+            font-size: 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .nextdates-container{
+        flex-direction: column;
+        align-self: center;
+        width: 400px;
+        height: 100%;
+        gap: 40px;
+        .nextdate-items{
+            width: 100%;
+            height: 250px;
+            font-size: 2rem;
+        }
+        .nextdate-button{
+            justify-content: center;
+        }
+        .next-date{
+            font-size: 18px;
+        }}
+    
+
+
+}
+
+@media (max-width:880px){
+
+        .banner-container{
+            width: 100%;
+            height: 400px;
+            h1{
+                width: 100%;
+                height: auto;
+                font-size: 6rem;
+            }
+        } 
+
+    .release-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .release-album{
+            width: 45%;
+            height: 45%;
+        }
+        .release-album-title{
+            font-size: 4rem;
+            text-align: center;
+        }
+        .band-history-text{
+            font-size: 10px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.nextdates-container{
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+
+    .nextdate-items{
+        width: 400px;
+        height: 250px;
+        font-size: 2rem;
+        align-self: center;
+        .nextdate-button{
+            justify-content: center;
+            font-size: 16px;
+        }
+        .next-date{
+            font-size: 18px;
+        }
+        .nextdate-place{
+            font-size: 18px;
+        }
+    
+        .nextdate-country{
+            font-size: 26px;
+        }
+    }
+
+
+}
+
+@media (max-width:680px){
+    .banner-container{
+        width: 100%;
+        height: 200px;
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 6rem;
+        }
+    } 
+
+    .history-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-pic-container{
+            width: 55%;
+            height: 55%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+.history-info-container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    .history-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .band-history-text{
+        text-align: center;
+        font-size: 9px;
+    }
+}
+
+.history-container-reverse{
+    .history-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .band-history-text{
+        text-align: center;
+        font-size: 9px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .history-pic-container{
+        width: 60%;
+        height: 60%;
+        .history-pic{
+            align-self: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.release-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .release-album{
+        width: 45%;
+        height: 45%;
+    }
+    .release-album-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .band-history-text{
+        font-size: 9px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.nextdates-container{
+    flex-direction: column;
+    align-self: center;
+    width: 350px;
+    height: 100%;
+    gap: 40px;
+    .nextdate-items{
+        width: 100%;
+        height: 250px;
+        font-size: 2rem;
+        .nextdate-button{
+            justify-content: center;
+            font-size: 16px;
+        }
+        .next-date{
+            font-size: 16px;
+        }
+        .nextdate-place{
+            font-size: 16px;
+        }
+    
+        .nextdate-country{
+            font-size: 25px;
+        }
+    }
+    
+    
+    }
+
+
+}
+
+
+
+
+@media (max-width:550px){
+    .banner-container{
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 6rem;
+        }
+    } 
+
+    .nextdates-container{
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        gap: 40px;
+        .nextdate-items{
+            width: 100%;
+            height: 200px;
+            font-size: 2rem;
+            .nextdate-button{
+                justify-content: right;
+                .nextdate-link{
+                    font-size: 9px;
+                }
+        
+            }
+            .next-date{
+                font-size: 9px;
+            }
+            .nextdate-place{
+                font-size: 9px;
+            }
+        
+            .nextdate-country{
+                font-size: 20px;
+            }
+        }
+        }
+
+    .history-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-pic-container{
+            width: 60%;
+            height: 60%;
+            .history-pic{
+                align-self: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+.history-info-container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    .history-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .band-history-text{
+        text-align: center;
+        font-size: 7px;
+    }
+}
+
+.history-container-reverse{
+    .history-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .band-history-text{
+        text-align: center;
+        font-size: 7px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .history-pic-container{
+        width: 60%;
+        height: 60%;
+        .history-pic{
+            align-self: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.release-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .release-album{
+        width: 45%;
+        height: 45%;
+    }
+    .release-album-title{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .band-history-text{
+        font-size: 7px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+
+}
+
+
+
+@media (max-width:400px){
+
+    .nextdates-container{
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        gap: 40px;
+        .nextdate-items{
+            width: 100%;
+            height: 250px;
+            font-size: 2rem;
+            .nextdate-button{
+                justify-content: right;
+                .nextdate-link{
+                    font-size: 9px;
+                }
+        
+            }
+            .next-date{
+                font-size: 9px;
+            }
+            .nextdate-place{
+                font-size: 9px;
+            }
+        
+            .nextdate-country{
+                font-size: 20px;
+            }
+        }
+        
+        }
+    .banner-container{
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 6rem;
+        }
+    } 
+
+    .history-container{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,119 +513,69 @@
             }
         }
     }
+
+
+.history-info-container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    .history-title{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .band-history-text{
+        text-align: center;
+        font-size: 6px;
+    }
 }
 
-@media (max-width:875px){
-
-    .history-info-container{
-        .history-pic-container{
+.history-container-reverse{
+    .history-title{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .band-history-text{
+        text-align: center;
+        font-size: 6px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .history-pic-container{
+        width: 80%;
+        height: 80%;
+        .history-pic{
+            align-self: center;
             width: 100%;
             height: 100%;
-            .history-pic{
-                align-self: center;
-                width: 100%;
-                height: 100%;
-            }
-        }
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-
-        .history-title{
-            text-align: center;
-            font-size: 3rem;
-        }
-        .band-history-text{
-            text-align: center;
-            font-size: 16px;
         }
     }
 }
 
-@media (max-width:720px){
-    .footer{
-    text-align:left;
-    padding:5%;
+.release-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .release-album{
+        width: 80%;
+        height: 80%;
     }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
-
-@media (max-width:655px){
-    .history-info-container{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-
-        .history-title{
-            text-align: center;
-            font-size: 2rem;
-        }
-        .band-history-text{
-            text-align: center;
-            font-size: 15px;
-        }
-    }
-}
-
-@media (max-width:550px){
-    .history-info-container{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-
-        .history-title{
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        .band-history-text{
-            text-align: center;
-            font-size: 14.5px;
-        }
-    }
-}
-
-
-
-@media (max-width: 1300px){
-    .release-container
-    {
-        flex-direction: column;
+    .release-album-title{
+        font-size: 3rem;
         text-align: center;
-        .release-album{
-            width: 100%;
-            height: auto;
-        }
-        .release-album-title{
-            font-size: 4rem;
-            text-align: center;
-        }
     }
-    
-    .nextdates-container{
-        flex-direction: column;
-        width: auto;
-        height: 300px;
-        gap: 40px;
-        .nextdate-items{
-            width: auto;
-            height: 300px;
-            text-align: center;
-            font-size: 2rem;
-        }
-        .nextdate-button{
-            justify-content: center;
-        }
-        .next-date{
-            font-size: 18px;
-        }}
+    .band-history-text{
+        font-size: 6px;
+        text-align: center;
+        margin-bottom: 0;
     }
+}
+}
+
+
+
+
 
     /* Media Queries para Banda.html */
 
@@ -281,9 +700,7 @@
 
 
 @media (max-width: 570px){
-    body main h1{
-        font-size: 3rem;
-    }
+
     .album-pic-container{
         width: 400px;
         height: 400px;
@@ -335,13 +752,6 @@
                 font-size: 2rem;
                 }}}
         
-
-
-@media (max-width: 380px){
-    body main h1{
-        font-size: 2.5rem;
-    }
-}
 
 /* Media Queries para tour.html */
 
@@ -414,49 +824,69 @@
     }
 }
 
-/* Media Queries para footer y Main h1*/
+/* Media Queries para Main h1*/
 
-@media ( min-width: 300px) and ( max-width: 430px){
-    .footer-list{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-item{
-        align-self: center;
-    }
+@media ( min-width: 1024px) and (max-width: 1370px){    
+    .banner-container{
+        width: 100%;
+        height: 768px;
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 9rem;
+        }
+    } 
 }
 
-@media ( max-width: 1024px){    
-    body main h1{
-    background-repeat: no-repeat;
-    background-position:center;
-    background-attachment:fixed;
-    background-size:cover;
-    width: auto;
-    height: 850px;
-}
+@media (min-width: 768px) and ( max-width: 1024px){   
+    .banner-container{
+        width: 100%;
+        height: 650px;
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 7.5rem;
+        }
+    } 
+} 
+
+
+@media (min-width: 600px) and ( max-width: 768px){    
+    .banner-container{
+        width: 100%;
+        height: 500px;
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 6rem;
+        }
+    } 
 }
 
-@media (min-width: 768px) and ( max-width: 1024px){    
-    body main h1{
-    background-repeat: no-repeat;
-    background-position:center;
-    background-attachment:fixed;
-    background-size:cover;
-    width: auto;
-    height: 750px;
-}}
+@media (min-width: 600px) and ( max-width: 600px){    
+    .banner-container{
+        width: 100%;
+        height: 865px;
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 4.5rem;
+        }
+    } 
+}
 
-@media (min-width: 320px) and ( max-width: 768px){    
-    body main h1{
-    background-repeat: no-repeat;
-    background-position:center;
-    background-attachment:fixed;
-    background-size:cover;
-    width: auto;
-    height: 650px;
-}}
+@media (min-width: 320px) and ( max-width: 456px){    
+    .banner-container{
+        width: 100%;
+        height: 865px;
+        h1{
+            width: 100%;
+            height: auto;
+            font-size: 3.3rem;
+        }
+    } 
+}
+
 
 .spotify-link:hover{
     color:crimson;
