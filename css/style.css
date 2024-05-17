@@ -286,7 +286,7 @@ nav {
 .background-index {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.png);
   background-size: cover;
   background-attachment: scroll;
 }
@@ -441,7 +441,7 @@ nav {
 .background-banda {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.png);
   background-size: cover;
 }
 
@@ -506,7 +506,7 @@ nav {
 .background-discografia {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.png);
   background-size: cover;
   background-attachment: scroll;
 }
@@ -566,7 +566,7 @@ nav {
 .background-tour {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.png);
   background-size: cover;
 }
 
