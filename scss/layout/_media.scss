@@ -1138,6 +1138,7 @@
 /* Media Queries para tour.html */
 
 @media ( max-width: 1410px){
+
     .date-box{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1159,14 +1160,29 @@
 }
 
 @media( max-width: 512px){
+
     .date-box{
         display: flex;
         flex-direction: column;
         text-align: center;
         .date-item{
-            text-align: center;
-            width: 100%;
-            height: 100%;
+            width: 320px;
+            height: 280px;
+            .tour-date{
+                font-size: 1.3rem;
+            }
+            .tour-city{
+                font-size: 1.5rem;
+            }
+            .tour-place{
+                font-size: 1.3rem;
+            }
+            .buytickets-link{
+                font-size: 14px;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+            }
         }
     }
 
@@ -1176,6 +1192,35 @@
     }
     .common-titles{
         font-size: 1.5rem;
+    }
+}
+
+
+@media( max-width: 380px){
+
+    .date-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .date-item{
+            width: 100%;
+            height: 100%;
+            .tour-date{
+                font-size: 1.3rem;
+            }
+            .tour-city{
+                font-size: 1.5rem;
+            }
+            .tour-place{
+                font-size: 1.3rem;
+            }
+            .buytickets-link{
+                font-size: 14px;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+            }
+        }
     }
 }
 
@@ -1211,7 +1256,7 @@
 @media ( min-width: 1024px) and (max-width: 1370px){    
     .banner-container{
         width: 100%;
-        height: 768px;
+        height: 650px;
         h1{
             width: 100%;
             height: auto;
@@ -1236,38 +1281,38 @@
 @media (min-width: 600px) and ( max-width: 768px){    
     .banner-container{
         width: 100%;
-        height: 500px;
+        height: 450px;
         h1{
             width: 100%;
             height: auto;
             font-size: 6rem;
         }
     } 
-}
+} 
 
 @media (min-width: 456px) and ( max-width: 600px){    
     .banner-container{
         width: 100%;
-        height: 865px;
+        height: 350px;
         h1{
             width: 100%;
             height: auto;
             font-size: 4.5rem;
         }
     } 
-}
+} 
 
 @media (min-width: 320px) and ( max-width: 456px){    
     .banner-container{
         width: 100%;
-        height: 865px;
+        height: 280px;
         h1{
             width: 100%;
             height: auto;
-            font-size: 3.3rem;
+            font-size: 3rem;
         }
     } 
-}
+} 
 
 
 .spotify-link:hover{

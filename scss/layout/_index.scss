@@ -1,9 +1,9 @@
 .background-index{
     min-height: 100vh;
     max-height: 100%;
-    background: linear-gradient(175deg, rgba(235, 235, 235, 0.863), rgba(212, 212, 212, 0.801)), url(../images/bakugan.jpg);
+    background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment:scroll;
 }
 
 // Estilo para historia de la banda
@@ -33,7 +33,7 @@
         .history-title{
             font-family: 'Fontspring-DEMO-proximanovacond-black';
             font-size: 5.5rem;
-            color: black;
+            color: rgb(0, 0, 0);
             animation: aparecer-izquierda-atenuado 2s forwards;
         }
         .band-history-text{

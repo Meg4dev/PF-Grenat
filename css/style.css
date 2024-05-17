@@ -286,9 +286,9 @@ nav {
 .background-index {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(175deg, rgba(235, 235, 235, 0.863), rgba(212, 212, 212, 0.801)), url(../images/bakugan.jpg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .history-container {
@@ -321,7 +321,7 @@ nav {
 .history-info-container .history-title {
   font-family: "Fontspring-DEMO-proximanovacond-black";
   font-size: 5.5rem;
-  color: black;
+  color: rgb(0, 0, 0);
   animation: aparecer-izquierda-atenuado 2s forwards;
 }
 .history-info-container .band-history-text {
@@ -441,9 +441,8 @@ nav {
 .background-banda {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(175deg, rgba(235, 235, 235, 0.863), rgba(212, 212, 212, 0.801)), url(../images/bakugan.jpg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .member-item {
@@ -507,9 +506,9 @@ nav {
 .background-discografia {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(175deg, rgba(235, 235, 235, 0.863), rgba(212, 212, 212, 0.801)), url(../images/bakugan.jpg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .album-box {
@@ -567,9 +566,8 @@ nav {
 .background-tour {
   min-height: 100vh;
   max-height: 100%;
-  background: linear-gradient(175deg, rgba(235, 235, 235, 0.863), rgba(212, 212, 212, 0.801)), url(../images/bakugan.jpg);
+  background: linear-gradient(75deg, rgba(241, 241, 241, 0.959), rgba(255, 255, 255, 0.966)), url(../images/web-background.jpeg);
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .date-box {
@@ -637,9 +635,9 @@ nav {
 }
 
 .background-gallery {
-  background-image: url(../images/gallery-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  min-height: 100vh;
+  max-height: 100%;
+  background: linear-gradient(145deg, rgba(119, 119, 119, 0.253), rgba(10, 10, 10, 0.452)), url(../images/gallery-background.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -647,7 +645,7 @@ nav {
 .gallery-box {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(700px, 2fr));
   grid-auto-rows: 800px;
   grid-auto-flow: row;
   width: 100%;
@@ -1708,9 +1706,23 @@ nav {
     text-align: center;
   }
   .date-box .date-item {
-    text-align: center;
+    width: 320px;
+    height: 280px;
+  }
+  .date-box .date-item .tour-date {
+    font-size: 1.3rem;
+  }
+  .date-box .date-item .tour-city {
+    font-size: 1.5rem;
+  }
+  .date-box .date-item .tour-place {
+    font-size: 1.3rem;
+  }
+  .date-box .date-item .buytickets-link {
+    font-size: 14px;
     width: 100%;
     height: 100%;
+    padding: 10px;
   }
   .video-item {
     width: 100%;
@@ -1718,6 +1730,32 @@ nav {
   }
   .common-titles {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 380px) {
+  .date-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .date-box .date-item {
+    width: 100%;
+    height: 100%;
+  }
+  .date-box .date-item .tour-date {
+    font-size: 1.3rem;
+  }
+  .date-box .date-item .tour-city {
+    font-size: 1.5rem;
+  }
+  .date-box .date-item .tour-place {
+    font-size: 1.3rem;
+  }
+  .date-box .date-item .buytickets-link {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
   }
 }
 /* Media Queries para Galeria.html */
@@ -1747,7 +1785,7 @@ nav {
 @media (min-width: 1024px) and (max-width: 1370px) {
   .banner-container {
     width: 100%;
-    height: 768px;
+    height: 650px;
   }
   .banner-container h1 {
     width: 100%;
@@ -1769,7 +1807,7 @@ nav {
 @media (min-width: 600px) and (max-width: 768px) {
   .banner-container {
     width: 100%;
-    height: 500px;
+    height: 450px;
   }
   .banner-container h1 {
     width: 100%;
@@ -1780,7 +1818,7 @@ nav {
 @media (min-width: 456px) and (max-width: 600px) {
   .banner-container {
     width: 100%;
-    height: 865px;
+    height: 350px;
   }
   .banner-container h1 {
     width: 100%;
@@ -1791,12 +1829,12 @@ nav {
 @media (min-width: 320px) and (max-width: 456px) {
   .banner-container {
     width: 100%;
-    height: 865px;
+    height: 280px;
   }
   .banner-container h1 {
     width: 100%;
     height: auto;
-    font-size: 3.3rem;
+    font-size: 3rem;
   }
 }
 .spotify-link:hover {

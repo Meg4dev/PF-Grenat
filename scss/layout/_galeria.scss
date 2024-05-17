@@ -1,7 +1,7 @@
 .background-gallery{
-    background-image: url(../images/gallery-background.jpg);
-    background-repeat: no-repeat;
-    background-position:center;
+    min-height: 100vh;
+    max-height: 100%;
+    background: linear-gradient(145deg, rgba(119, 119, 119, 0.253), rgba(10, 10, 10, 0.452)), url(../images/gallery-background.jpg);
     background-attachment:fixed;
     background-size:cover;
 }
@@ -11,7 +11,7 @@
 .gallery-box{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 2fr));
     grid-auto-rows: 800px;
     grid-auto-flow:row;
     width: 100%;
