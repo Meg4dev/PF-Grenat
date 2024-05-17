@@ -778,100 +778,362 @@
 /* Media Queries para Discografia.html */
 
 
-@media (max-width: 1581px){
+@media (max-width: 1500px){
     .album-box{
-        flex-direction: column;
-        text-align: center;
-        background-color: transparent;
+        .album-pic-container{
+            width: 80%;
+            height: 80%;
+            .album-img{
+                width: 100%;
+                height: 100%;
+            }
+        }
         .album-info-container{
-            padding: 10px 20px;
+            padding: 10px 10px;
+            width: 100%;
+            height: 100%;
+            }
+            .album-title{
+            font-size: 4rem;
+            }
+            .album-text{
+                font-size: 13.5px;
             }
             .spotify-button{
-                align-self: center;
                 height: 29px;
                 width: 84px;
             }
-            .spotify-link:hover{
-                color:crimson;
-                font-size: 15px;
+            .spotify-link{
+            font-size: 0.7rem;
+            &:hover{
+                color:red;
                 transition: 0.5s;
             }
         }
     }
+    }
 
-@media (max-width: 888px){
-
-    .album-pic-container{
-        width: 500px;
-        height: 500px;
-        align-self: center;
-        .album-img{
-            width: 500px;
-            height: 500px;
-        }}
-        .album-info-container{
-            .album-title{
-                font-size: 4rem;
+@media (max-width: 1453px){
+    .album-box{
+        .album-pic-container{
+            width: 70%;
+            height: 70%;
+            .album-img{
+                width: 100%;
+                height: 100%;
             }
+        }
+        .album-info-container{
+            padding: 10px 10px;
+            width: 100%;
+            height: 100%;
+            }
+            .album-title{
+            font-size: 4rem;
+            }
+            .album-text{
+                font-size: 13px;
+            }
+            .spotify-button{
+                height: 29px;
+                width: auto;
+            }
+            .spotify-link{
+            font-size: 0.6rem;
+            &:hover{
+                color:red;
+                transition: 0.5s;
+            }
+        }
         }
     }
 
-
-
-
-@media (max-width: 570px){
-
-    .album-pic-container{
-        width: 400px;
-        height: 400px;
-        align-self: center;
-        .album-img{
-            width: 400px;
-            height: 400px;
+    @media (max-width: 1366px){
+        .album-box{
+            .album-pic-container{
+                width: 50%;
+                height: 50%;
+                .album-img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .album-info-container{
+                padding: 10px 10px;
+                width: 100%;
+                height: 100%;
+                }
+                .album-title{
+                font-size: 3rem;
+                }
+                .album-text{
+                    font-size: 11px;
+                }
+                .spotify-button{
+                    height: 29px;
+                    width: auto;
+                }
+                .spotify-link{
+                font-size: 0.5rem;
+                &:hover{
+                    color:red;
+                    transition: 0.5s;
+                }
+            }
             }
         }
 
-        .album-box{
-        .album-info-container{
-            width: 100%;
-            height: 100%;
-            text-align: center;
-        }
-        .album-text{
-            font-size: 14px;
-        }}}
-
-
-@media (max-width: 478px){
-    .album-pic-container{
-        width: 300px;
-        height: 300px;
-        align-self: center;
-        .album-img{
-        width: 300px;
-        height: 300px;
-        }
-        }
-        .album-info-container{
-        .album-title{
-        font-size: 3rem;
-        }}}
-
-        @media (max-width: 360px){
-            .album-pic-container{
-                width: 200px;
-                height: 200px;
-                align-self: center;
-                .album-img{
-                width: 200px;
-                height: 200px;
+            @media (max-width: 1280px){
+                .album-box{
+                    .album-pic-container{
+                        width: 45%;
+                        height: 45%;
+                        .album-img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .album-info-container{
+                        padding: 10px 10px;
+                        width: 100%;
+                        height: 100%;
+                        }
+                        .album-title{
+                        font-size: 3rem;
+                        }
+                        .album-text{
+                            font-size: 9px;
+                        }
+                        .spotify-button{
+                            height: 29px;
+                            width: auto;
+                        }
+                        .spotify-link{
+                        font-size: 0.5rem;
+                        &:hover{
+                            color:red;
+                            transition: 0.5s;
+                        }
+                    }
+                    }
                 }
+        
+
+        @media (max-width: 1139px){
+            .album-box{
+                flex-direction: column;
+                .album-pic-container{
+                    width: 40%;
+                    height: 40%;
+                    align-self: center;
+                    .album-img{
+                        width: 100%;
+                        height: 100%;
+                        align-items: center;
+                    }
                 }
                 .album-info-container{
+                    padding: 10px 10px;
+                    width: 100%;
+                    height: 100%;
+                    }
+                    .album-title{
+                    font-size: 3rem;
+                    text-align: center;
+                    }
+                    .album-text{
+                        font-size: 10px;
+                        text-align:center;
+                    }
+                    .spotify-button{
+                        height: 29px;
+                        width: auto;
+                        align-self: center;
+                    }
+                    .spotify-link{
+                    font-size: 0.7rem;
+                    &:hover{
+                        color:red;
+                        transition: 0.5s;
+                    }
+                }
+                }
+            }
+
+
+@media (max-width: 840px){
+
+    .album-box{
+        flex-direction: column;
+        .album-pic-container{
+            width: 50%;
+            height: 50%;
+            align-self: center;
+            .album-img{
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+        }
+        .album-info-container{
+            padding: 10px 10px;
+            width: 100%;
+            height: 100%;
+            }
+            .album-title{
+            font-size: 3rem;
+            text-align: center;
+            }
+            .album-text{
+                font-size: 9px;
+                text-align:center;
+            }
+            .spotify-button{
+                height: 29px;
+                width: auto;
+                align-self: center;
+            }
+            .spotify-link{
+            font-size: 0.6rem;
+            &:hover{
+                color:red;
+                transition: 0.5s;
+            }
+        }
+        }
+    }
+
+    @media (max-width: 570px){
+
+        .album-box{
+            flex-direction: column;
+            .album-pic-container{
+                width: 65%;
+                height: 65%;
+                align-self: center;
+                .album-img{
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                }
+            }
+            .album-info-container{
+                padding: 10px 10px;
+                width: 100%;
+                height: 100%;
+                }
                 .album-title{
                 font-size: 2rem;
-                }}}
-        
+                text-align: center;
+                }
+                .album-text{
+                    font-size: 8px;
+                    text-align:center;
+                }
+                .spotify-button{
+                    height: 29px;
+                    width: auto;
+                    align-self: center;
+                }
+                .spotify-link{
+                font-size: 0.6rem;
+                &:hover{
+                    color:red;
+                    transition: 0.5s;
+                }
+            }
+            }
+        }
+
+
+
+
+
+
+
+@media (max-width: 420px){
+
+    .album-box{
+        flex-direction: column;
+        .album-pic-container{
+            width: 60%;
+            height: 60%;
+            align-self: center;
+            .album-img{
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+        }
+        .album-info-container{
+            padding: 10px 10px;
+            width: 100%;
+            height: 100%;
+            }
+            .album-title{
+            font-size: 1rem;
+            text-align: center;
+            }
+            .album-text{
+                font-size: 6px;
+                text-align:center;
+            }
+            .spotify-button{
+                height: 29px;
+                width: auto;
+                align-self: center;
+            }
+            .spotify-link{
+            font-size: 0.5rem;
+            &:hover{
+                color:red;
+                transition: 0.5s;
+            }
+        }
+        }
+    }
+
+    @media (max-width: 420px){
+
+        .album-box{
+            flex-direction: column;
+            .album-pic-container{
+                width: 65%;
+                height: 65%;
+                align-self: center;
+                .album-img{
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                }
+            }
+            .album-info-container{
+                padding: 10px 10px;
+                width: 100%;
+                height: 100%;
+                }
+                .album-title{
+                font-size: 1rem;
+                text-align: center;
+                }
+                .album-text{
+                    font-size: 5px;
+                    text-align:center;
+                }
+                .spotify-button{
+                    height: 29px;
+                    width: auto;
+                    align-self: center;
+                }
+                .spotify-link{
+                font-size: 0.5rem;
+                &:hover{
+                    color:red;
+                    transition: 0.5s;
+                }
+            }
+            }
+        }
 
 /* Media Queries para tour.html */
 
@@ -983,7 +1245,7 @@
     } 
 }
 
-@media (min-width: 600px) and ( max-width: 600px){    
+@media (min-width: 456px) and ( max-width: 600px){    
     .banner-container{
         width: 100%;
         height: 865px;
